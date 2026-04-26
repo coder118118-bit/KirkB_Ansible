@@ -1,0 +1,17 @@
+---
+- name: Exercise1
+  hosts: localhost
+  gather_facts: False
+
+  tasks:
+    - name: Test filter1
+      ansible.builtin.debug:
+        msg: "{{ 'heLLo World' | filter1 }}"
+
+    - name: Test filter2
+      ansible.builtin.debug:
+        msg: "{{ 'heLLo World' | filter2 }}"
+
+    - name: Test filter3
+      ansible.builtin.debug:
+        msg: "{{ 'heLLo World' | filter3 }}"
